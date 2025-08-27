@@ -77,3 +77,55 @@ PR (小功能)    |       |   PR (小功能)
 - `chore: ...` 其他雜項  
 
 ---
+
+## 📦 Release 流程
+
+專案的發版流程遵循以下步驟：
+
+1. **功能開發**  
+   - 從 `dev` 建立新分支：  
+     ```bash
+     git checkout dev
+     git pull
+     git checkout -b feature/<功能名稱>
+     ```
+   - 開發完成後提交 PR → `dev`
+
+2. **整合測試**  
+   - 所有功能合併到 `dev`  
+   - 本地或 CI 測試無誤後，準備發版
+
+3. **合併到 main**  
+   - 建立 PR：`dev` → `main`  
+   - 通過檢查後合併
+
+4. **打版本號 Tag**  
+   - 切換到 main 分支並更新
+     ```bash
+     git checkout main
+     git pull
+     ```
+   - 打上版本號（遵循 [SemVer](https://semver.org/lang/zh-CN/)）
+     ```bash
+     git tag v0.1.0
+     git push origin v0.1.0
+     ```
+
+5. **建立 Release**  
+   - 在 GitHub 頁面 → Releases → New Release  
+   - 選擇剛剛的 Tag（例如 `v0.1.0`）  
+   - 填寫 Release Notes（新增功能、修正、注意事項）  
+   - 發布 🚀
+
+---
+
+### 🔢 版本號規則 (SemVer)
+- **主版本號 (MAJOR)**：當你做了不相容的 API 修改  
+- **次版本號 (MINOR)**：當你新增了向下相容的功能  
+- **修訂號 (PATCH)**：當你做了向下相容的問題修正  
+
+例如：  
+- `v1.0.0` → 第一個穩定版本  
+- `v1.1.0` → 新增功能（相容）  
+- `v1.1.1` → 修正小問題（相容）  
+
