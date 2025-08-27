@@ -45,6 +45,11 @@
 		50E26E292C3AF67B007CF247 /* TrayDrop+DropItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E26E282C3AF67B007CF247 /* TrayDrop+DropItem.swift */; };
 		50EFDB522C3BF7B4002D3E0F /* Ext+NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EFDB512C3BF7B4002D3E0F /* Ext+NSImage.swift */; };
 		60AD62872C579F4400299297 /* NotchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD62862C579F4400299297 /* NotchSettingsView.swift */; };
+		CCF591602E5B5780001A39AE /* DotsIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5915F2E5B5771001A39AE /* DotsIndicator.swift */; };
+		CCF591622E5B59B3001A39AE /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF591612E5B59B1001A39AE /* PagerView.swift */; };
+		CCF591642E5B5BD0001A39AE /* TrackpadSwipeCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF591632E5B5BC9001A39AE /* TrackpadSwipeCatcher.swift */; };
+		CCF591662E5B83A3001A39AE /* TitleAnchorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF591652E5B839E001A39AE /* TitleAnchorKey.swift */; };
+		CCF591682E5B87D6001A39AE /* CurrentPageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF591672E5B87C1001A39AE /* CurrentPageKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +86,11 @@
 		50E26E282C3AF67B007CF247 /* TrayDrop+DropItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrayDrop+DropItem.swift"; sourceTree = "<group>"; };
 		50EFDB512C3BF7B4002D3E0F /* Ext+NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+NSImage.swift"; sourceTree = "<group>"; };
 		60AD62862C579F4400299297 /* NotchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchSettingsView.swift; sourceTree = "<group>"; };
+		CCF5915F2E5B5771001A39AE /* DotsIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsIndicator.swift; sourceTree = "<group>"; };
+		CCF591612E5B59B1001A39AE /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		CCF591632E5B5BC9001A39AE /* TrackpadSwipeCatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadSwipeCatcher.swift; sourceTree = "<group>"; };
+		CCF591652E5B839E001A39AE /* TitleAnchorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAnchorKey.swift; sourceTree = "<group>"; };
+		CCF591672E5B87C1001A39AE /* CurrentPageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPageKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,11 @@
 		504381822C3A86EA000ED325 /* NotchDrop */ = {
 			isa = PBXGroup;
 			children = (
+				CCF591672E5B87C1001A39AE /* CurrentPageKey.swift */,
+				CCF591652E5B839E001A39AE /* TitleAnchorKey.swift */,
+				CCF591632E5B5BC9001A39AE /* TrackpadSwipeCatcher.swift */,
+				CCF591612E5B59B1001A39AE /* PagerView.swift */,
+				CCF5915F2E5B5771001A39AE /* DotsIndicator.swift */,
 				148901512DC9149900F2E06C /* Share.swift */,
 				148901522DC9149900F2E06C /* Share+View.swift */,
 				50D7EFF22C3E484C005AC04E /* Info.plist */,
@@ -267,8 +282,11 @@
 				504381A42C3A8C7E000ED325 /* NotchWindowController.swift in Sources */,
 				504381B12C3AE0B6000ED325 /* NotchHeaderView.swift in Sources */,
 				50E26E292C3AF67B007CF247 /* TrayDrop+DropItem.swift in Sources */,
+				CCF591662E5B83A3001A39AE /* TitleAnchorKey.swift in Sources */,
 				504381A22C3A8BE0000ED325 /* Ext+NSScreen.swift in Sources */,
 				5044EEA42C3B140F00071C5C /* Ext+URL.swift in Sources */,
+				CCF591602E5B5780001A39AE /* DotsIndicator.swift in Sources */,
+				CCF591622E5B59B3001A39AE /* PagerView.swift in Sources */,
 				5044EE992C3B069200071C5C /* TrayDrop+View.swift in Sources */,
 				50CB767E2C3BC8880070D5E6 /* NotchViewModel+Events.swift in Sources */,
 				504381AC2C3A95BD000ED325 /* EventMonitors.swift in Sources */,
@@ -277,10 +295,12 @@
 				504381AA2C3A9514000ED325 /* EventMonitor.swift in Sources */,
 				501F0E8C2C59E6BD00F0113C /* Language.swift in Sources */,
 				5043819B2C3A8A06000ED325 /* AppDelegate.swift in Sources */,
+				CCF591682E5B87D6001A39AE /* CurrentPageKey.swift in Sources */,
 				148901532DC9149900F2E06C /* Share.swift in Sources */,
 				148901542DC9149900F2E06C /* Share+View.swift in Sources */,
 				504381932C3A8755000ED325 /* main.swift in Sources */,
 				60AD62872C579F4400299297 /* NotchSettingsView.swift in Sources */,
+				CCF591642E5B5BD0001A39AE /* TrackpadSwipeCatcher.swift in Sources */,
 				504381A82C3A926E000ED325 /* NotchViewModel.swift in Sources */,
 				5044EEA02C3B116000071C5C /* PublishedPersist.swift in Sources */,
 			);
@@ -421,7 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 42;
-				DEVELOPMENT_TEAM = 964G86XT2P;
+				DEVELOPMENT_TEAM = D43M98388S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -452,7 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 42;
-				DEVELOPMENT_TEAM = 964G86XT2P;
+				DEVELOPMENT_TEAM = D43M98388S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

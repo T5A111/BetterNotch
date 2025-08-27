@@ -19,11 +19,18 @@ struct NotchHeaderView: View {
                     : "Notch Drop"
             )
             .contentTransition(.numericText())
+            .anchorPreference(key: TitleAnchorKey.self, value: .bounds)
+            {
+                $0
+            } // end of anchorPreference
+
+            
             Spacer()
             Image(systemName: "ellipsis")
         }
         .animation(vm.animation, value: vm.contentType)
         .font(.system(.headline, design: .rounded))
+        
     }
 }
 
